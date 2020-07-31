@@ -1,1 +1,1 @@
-# planner_app
+# plannet_app
