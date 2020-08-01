@@ -1,18 +1,5 @@
-
-//SAVE BUTTON
-//grab value that was typed and stores into var
-//this value of input which input based on iD
-//store that into local storage
-
-//grab from local storage
-//display onto browser
-
-//create func to update
-//use moment to current hour and store in var
-//loop over each time block, grab an id that tells us time block
-// if current hour is less than time block to indicate the past
-
-//css anything with class name pass to make it 'red'
+var now = moment().format("MMM Do YY");
+$("#timeDay").append(now);
 
 $(document).ready(function () {
 
@@ -36,7 +23,10 @@ $(document).ready(function () {
                 $(this).removeClass('past')
                 $(this).addClass('present')
             } else {
-                console.log('future')
+                $(this).removeClass('past')
+                $(this).removeClass('presnet')
+                $(this).addClass('future')
+            
             }
 
         })
@@ -55,7 +45,34 @@ $(document).ready(function () {
 
     //initial functions
 
-    $("#8am .inputVal").val(localStorage.getItem("8am"))
-    $("#9am .inputVal").val(localStorage.getItem("9am"))
+    $("#8 .inputVal").val(localStorage.getItem("8"))
+    $("#9 .inputVal").val(localStorage.getItem("9"))
+    $("#10 .inputVal").val(localStorage.getItem("10"))
+    $("#11 .inputVal").val(localStorage.getItem("11"))
+    $("#12 .inputVal").val(localStorage.getItem("12"))
+    $("#13 .inputVal").val(localStorage.getItem("13"))
+    $("#14 .inputVal").val(localStorage.getItem("14"))
+    $("#15 .inputVal").val(localStorage.getItem("15"))
+    $("#16 .inputVal").val(localStorage.getItem("16"))
+    $("#17 .inputVal").val(localStorage.getItem("17"))
 
-})
+
+});
+
+
+//SAVE BUTTON
+//grab value that was typed and stores into var
+//this value of input which input based on iD
+//store that into local storage
+
+//grab from local storage
+//display onto browser
+
+//create func to update
+//use moment to current hour and store in var
+//loop over each time block, grab an id that tells us time block
+// if current hour is less than time block to indicate the past
+
+//css anything with class name pass to make it 'red'
+
+//todays date and current time

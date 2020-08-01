@@ -1,10 +1,23 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-size: 16px;
   line-height: 1;
 }
+#header{
+font-weight: bolder;
+}
 
-textarea{
+.inputVal{
+  border-left: 3px solid rgb(196, 194, 194);
+  border-top: 3px solid rgb(196, 194, 194);
+  border-bottom: 3px solid rgb(184, 184, 184);
+  padding: 10px;
+  white-space: pre-wrap;
+
+
+}
+
+.text{
   background: transparent;
   border: none;
   resize: none;
@@ -25,36 +38,25 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 0px solid white;;
 }
 
 .past {
-  background-color: #ce1818;
+  background-color: #eb4d4d;
   color: white;
 }
 
 .present {
-  background-color: #150ab6;
+  background-color: rgb(87, 201, 87);
   color: rgb(29, 12, 182);
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: #77bddd;
+  color: blue;
 }
 
 .saveBtn {
