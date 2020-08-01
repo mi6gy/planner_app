@@ -10,3 +10,5 @@ This application is a simple day planner that allows the user to save events for
 
 ![Screenshot](/workDayS.png)
 
+
+[Click here to try](https://mi6gy.github.io/planner_app/)
